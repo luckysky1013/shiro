@@ -7,4 +7,6 @@ import com.emma.springboot.shiro.domian.User;
  * @date 2019/4/24
  */
 public interface UserRepository extends BaseRepository<User,String> {
+
+	User findByUsername(String username);
 }
